@@ -1,6 +1,7 @@
 package com.nguyenquyen.vnpaydemo.config;
 
 import jakarta.servlet.http.HttpServletRequest;
+import lombok.Getter;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
@@ -13,7 +14,7 @@ import java.security.NoSuchAlgorithmException;
 import java.util.*;
 
 @Component
-
+@Getter
 public class VNPayConfig {
     @Value("${vnpay.payUrl}")
     public String vnp_PayUrl;
