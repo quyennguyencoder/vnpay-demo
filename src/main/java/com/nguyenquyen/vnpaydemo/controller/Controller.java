@@ -14,7 +14,6 @@ public class Controller {
     @Autowired
     private VNPayService vnPayService;
 
-
     @GetMapping("")
     public String home(){
         return "index";
